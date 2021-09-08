@@ -209,6 +209,31 @@ body {
     cursor: pointer;
 }
 
+/* Parallax Text */
+.text-subtitle {
+    font-size: 3.3rem;
+    line-height: 3.5rem;
+    font-family: 'Satisfy', cursive;
+    color: var(--primary-color--);
+}
+
+.text-title {
+    margin: 0px;
+    line-height: 7.1rem;
+    font-size: 6.5rem;
+    font-weight: 500;
+    letter-spacing: -0.5rem;
+    color: var(--text-color--);
+}
+
+.text-content {
+    margin: 20px 0px;
+    max-width: 700px;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: var(--text-color--);
+}
 
 
 
