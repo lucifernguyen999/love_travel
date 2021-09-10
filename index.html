@@ -781,8 +781,14 @@
                 </div>
                 <div class="slider__list">
                     <div class="grid__full-width">
-                        <div class="grid__row">
-                            <div class="grid__columm-5">
+                        <div class="grid__row-full">
+                            <!-- Radio Buttons -->
+                            <div class="slider__radio">
+                                <input type="radio" name="radio-btn-1" id="radio-btn-1" class="radio-btn">
+                                <input type="radio" name="radio-btn-2" id="radio-btn-2" class="radio-btn">
+                                <input type="radio" name="radio-btn-3" id="radio-btn-3" class="radio-btn">
+                            </div>
+                            <div class="grid__columm-5 first">
                                 <div class="slider__item">
                                     <div class="slider__item--img">
                                         <a href="" class="slider__item--img-link" style="background-image: url(./assest/img/holiday_item/corfu.jpg);"></a>
@@ -1235,7 +1241,19 @@
                             </div>
                         </div>
                     </div>
-                    <!-- radio -->
+                    
+                    <!-- Auto Navigation -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn-1"></div>
+                        <div class="auto-btn-2"></div>
+                        <div class="auto-btn-3"></div>
+                    </div>
+                    <!-- Manual Navigation -->
+                    <div class="manual-navigation">
+                        <label for="radio-btn-1" class="manual-btn"></label>
+                        <label for="radio-btn-2" class="manual-btn"></label>
+                        <label for="radio-btn-3" class="manual-btn"></label>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1349,6 +1367,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Video Show -->
 
     <script src="./main.js"></script>
 </body>

@@ -1051,7 +1051,7 @@
 }
 
 .slider__list {
-    width: 100%;
+    max-width: 100%;
     padding: 350px 0;
     overflow: hidden;
 }
@@ -1093,7 +1093,7 @@
 .slider__item__status {
     position: absolute;
     width: 100%;
-    margin-top: 172px;
+    margin-top: 186px;
     height: 40px;
     background-color: var(--primary-color);
     display: flex;
@@ -1122,7 +1122,7 @@
 .slider__item__detail--title {
     font-size: 2rem;
     cursor: pointer;
-    padding-top: 20px;
+    padding: 12px 0;
     font-weight: 500;
 }
 
@@ -1184,3 +1184,86 @@
     cursor: pointer;
     transform: scale(1.05);
 }
+
+/* Radio Button */
+.slider__radio {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    display: none; 
+}
+
+.radio-btn {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Manual Navigation */
+.manual-navigation {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+
+.manual-btn {
+    padding: 5px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    display: inline-block;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+.manual-btn:hover {
+    background-color: var(--primary-color);
+}
+
+.radio-btn-1:checked ~ .first {
+    margin-left: 0;
+}
+
+.radio-btn-2:checked ~ .first {
+    margin-left: -10%;
+}
+
+.radio-btn-3:checked ~ .first {
+    margin-left: -20%;
+}
+
+/* Auto Navigation */
+.navigation-auto {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.navigation-auto div {
+    border: 2px solid var(--primary-color);
+    padding: 5px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+#radio-btn-1:checked ~ .navigation-auto .auto-btn-1 {
+    background-color: var(--primary-color);
+} 
+
+#radio-btn-2:checked ~ .navigation-auto .auto-btn-2 {
+    background-color: var(--primary-color);
+} 
+
+#radio-btn-3:checked ~ .navigation-auto .auto-btn-3 {
+    background-color: var(--primary-color);
+} 
