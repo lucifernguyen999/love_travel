@@ -1267,3 +1267,49 @@
 #radio-btn-3:checked ~ .navigation-auto .auto-btn-3 {
     background-color: var(--primary-color);
 } 
+
+/* Review Section */
+.review__section {
+    width: 100%;
+}
+
+.review__section-wrap {
+    text-align: center;
+    user-select: none;
+    padding: 110px 0 36px;
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+.review__section-wrap-img {
+    height: 150px;
+}
+
+.review__section-img {
+    height: 100%;
+    width: 100%;
+    background: url(../img/review/user-img-6.png) no-repeat center / contain;
+}
+
+.review__section-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.review__section-content-text {
+    width: 1100px;
+    font-size: 1.8rem;
+    display: flex;
+    line-height: 2.6rem;
+}
+
+.review__section-subtitle {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-top: 26px;
+    font-family: 'Satisfy', cursive;
+}
