@@ -1,7 +1,7 @@
 :root {
     --white-color: #fff;
     --black-color: black;
-    --text-color: #212121;
+    --text-color: #505050;
     --primary-color: #3fd0d4;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .grid__full-width {
-    width: auto;
+    width: 100%;
 }
 
 .grid__row-full {
@@ -38,6 +38,14 @@ body {
     margin-right: -5px;
     flex-wrap: nowrap;
     width: 222%;
+}
+
+.grid__row-3 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    width: 100%;
 }
 
 .grid__row {
@@ -50,7 +58,7 @@ body {
 .grid_columm-3 {
     padding-left: 15px;
     padding-right: 15px;
-    width: 33.33333%;
+    width: calc(100% / 3);
 }
 
 .grid__columm-4 {
@@ -219,6 +227,14 @@ body {
 }
 
 /* Parallax Text */
+.title-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 150px 0 62px;
+    align-items: center;
+}
+
 .text-subtitle {
     font-size: 3.3rem;
     line-height: 3.5rem;
