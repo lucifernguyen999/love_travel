@@ -1507,7 +1507,7 @@
 
 /* Blog */
 .blog__section {
-    padding: 150px 0;
+    padding: 150px 0 100px;
     display: flex;
 }
 
@@ -1577,7 +1577,7 @@
 }
 
 .blog__contai__content--title {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 2.2rem;
     height: 4.8rem;
     color:var(--text-color);
@@ -1659,4 +1659,82 @@
 .blog__contai__content__footer--date:hover,
 .blog__contai__content__footer--cmt:hover {
     color: var(--primary-color);
+}
+
+/* Choose Your Destination */
+.destination__choose {
+    width: 100%;
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/Big_img/h1-background-img-2.jpg);
+}
+
+.choose__list__item {
+    width: 100%;
+    height: 416px;
+    text-decoration: none;
+    position: relative;
+    border-radius: 50%;
+    /* overflow: hidden; */
+    transition: transform 0.5s linear;
+}
+
+.destination__choose__wrap {
+    padding: 30px 0 120px;
+}
+
+.choose__list__item--wrap {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.choose__list__item--img--link {
+    height: 100%;
+    padding-top: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.5s linear;
+    filter: brightness(80%);
+}
+
+.choose__list__item-wrap-text {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: auto;
+    width: 100%;
+}
+
+.choose__list__item--text {
+    margin: 0;
+    font-size: 5rem;
+    font-family: 'Satisfy', cursive;
+    color: var(--white-color);
+}
+
+.choose__list__item:hover .choose__list__item--img--link {
+    transform: scale(1.05);
+}
+
+.choose__list__item--star {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 36px;
+}
+
+.choose__list__item--sta-icon {
+    font-size: 2rem;
+    color: var(--white-color);
 }
