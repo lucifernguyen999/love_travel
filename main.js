@@ -94,6 +94,50 @@ function carousel() {
     setTimeout(carousel, 5000)
 }
 
+// Review Slideshow Btn
+var sliderReview = 1;
+showDivsReview(sliderReview)
+
+function plusDivs_review(n) {
+    showDivsReview(sliderReview += n)
+}
+
+function showDivsReview(n) {
+    var i
+    var x = document.querySelectorAll(".review_slide")
+    if (n > x.length) {
+        sliderReview = 1
+    }
+
+    if (n < 1) {
+        sliderReview = x.length
+    }
+
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"
+    }
+
+    x[sliderReview-1].style.display = "block"
+}
+
+// Review Slideshow Auto
+var myIndexReview = 0
+reviewSlider()
+
+function reviewSlider() {
+    var i
+    var x = document.querySelectorAll('.review_slide')
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"
+    }
+    myIndexReview++
+    if (myIndexReview > x.length) {
+        myIndexReview = 1
+    }
+    x[myIndexReview-1].style.display = "block"
+    setTimeout(reviewSlider, 5000)
+}
+
 // Container Header Navbar Scroll & Btn Top
 var headerScroll = document.querySelector('.js-header')
 const topBtn = document.querySelector('.js-top-btn')

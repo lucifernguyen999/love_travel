@@ -638,16 +638,6 @@
     background: url(../img/slider/slide2.jpg) bottom center / cover no-repeat;
 }
 
-.zoom-in {
-    transform-origin: center;
-    animation: zoomIn linear 5s;
-}
-
-.zoom-left {
-    transform-origin: top right;
-    animation: zoomIn linear 5s;
-}
-
 .slide__text {
     display: flex;
     position: absolute;
@@ -889,8 +879,8 @@
 }
 
 .section__footer {
-    padding: 56px 0 127px 0;
-    margin-bottom: 110px;
+    padding: 124px 0;
+    margin-bottom: 36px;
     background: url(../img/destination/footer-des.png) no-repeat center;
 }
 
@@ -1272,16 +1262,23 @@
 /* Review Section */
 .review__section {
     width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    position: relative;
+    margin-top: 90px;
 }
 
 .review__section-wrap {
     text-align: center;
     user-select: none;
     padding: 110px 0 36px;
-    width: 100%;
+    width: 1200px;
     display: flex; 
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .review__section-wrap-img {
@@ -1291,7 +1288,18 @@
 .review__section-img {
     height: 100%;
     width: 100%;
-    background: url(../img/review/Madrid.png) no-repeat center / contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.review_slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: rightToLeft ease-in 0.7s;
 }
 
 .review__section-content {
@@ -1313,6 +1321,25 @@
     line-height: 3rem;
     margin-top: 26px;
     font-family: 'Satisfy', cursive;
+}
+
+.review__slider__control {
+    display: flex;
+    width: 71%;
+    top: 50%;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.review__slider__control-btn {
+    border: none;
+    font-size: 4rem;
+    background-color: transparent;
+}
+
+.review__slider__control-btn:hover {
+    cursor: pointer;
+    color: var(--primary-color);
 }
 
 /* Special Section */
@@ -1428,7 +1455,7 @@
 /* Travel Review Slider */
 .travel__review__slider {
     max-width: 100%;
-    padding: 350px 0;
+    padding: 380px 0;
     overflow: hidden;
     position: relative;
     top: 0;

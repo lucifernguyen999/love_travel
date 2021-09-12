@@ -135,6 +135,26 @@ body {
     }
 }
 
+@keyframes rightToLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Effect */
+.zoom-in {
+    transform-origin: center;
+    animation: zoomIn linear 5s;
+}
+
+.zoom-left {
+    transform-origin: top right;
+    animation: zoomIn linear 5s;
+}
+
 /* Modal */
 .modal {
     top: 0;
@@ -239,7 +259,7 @@ body {
     font-size: 3.3rem;
     line-height: 3.5rem;
     font-family: 'Satisfy', cursive;
-    color: var(--primary-color--);
+    color: var(--primary-color);
 }
 
 .text-title {
@@ -248,7 +268,7 @@ body {
     font-size: 6.5rem;
     font-weight: 500;
     letter-spacing: -0.5rem;
-    color: var(--text-color--);
+    color: var(--black-color);
 }
 
 .text-content {
@@ -257,7 +277,7 @@ body {
     font-size: 1.7rem;
     line-height: 2.5rem;
     text-align: center;
-    color: var(--text-color--);
+    color: var(--text-color);
 }
 
 
