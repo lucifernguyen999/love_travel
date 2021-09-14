@@ -37,7 +37,7 @@ body {
     margin-left: -5px;
     margin-right: -5px;
     flex-wrap: nowrap;
-    width: 222%;
+    width: 100%;
 }
 
 .grid__row-3 {
